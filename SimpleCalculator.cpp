@@ -6,7 +6,7 @@ enum enOperationType {Add = '+', Subtract = '-', Multiplty = '*', Divide = '/'};
 
 float ReadNumber(string Message)
 {
-    float Number;
+    float Number = 0;
     cout << Message << endl;
     cin >> Number;
 
@@ -47,6 +47,6 @@ int main()
     enOperationType OperationType = ReadOperationType();
 
     cout << "Result = " << Calculate(Number1, Number2, OperationType);
-    
+
     return 0;
 }
